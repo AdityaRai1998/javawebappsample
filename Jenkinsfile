@@ -20,7 +20,7 @@ node {
   
     stage('deploy') {
       def resourceGroup = 'jenkins-get-started-rg'
-      def webAppName = 'AdityaRaiAppServicePlan'
+      def webAppName = 'AdityaWebApp'
       // login Azure
       withCredentials([usernamePassword(credentialsId: 'AzureServicePrincipal', passwordVariable: 'Aditya@1998', usernameVariable: 'AdityaKumarRai')]) {
        sh '''
